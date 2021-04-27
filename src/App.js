@@ -54,12 +54,12 @@ const App = () => {
     <a key={item.product_id} rel="noreferrer" target="_blank" href={item.translations.pl_PL.permalink}>
       <div className="singleTile">
         <img src="https://via.placeholder.com/250" alt={item.translations.pl_PL.name} />
-        <div className="singleTileItem">Prod Id: {item.product_id}</div>
-        <div className="singleTileItem">{item.translations.pl_PL.name}</div>
+        <div>Prod Id: {item.product_id}</div>
+        <div>{item.translations.pl_PL.name}</div>
         <div dangerouslySetInnerHTML={{ __html: item.translations.pl_PL.short_description }} className='singleTileItem' />
-        <div className="singleTileItem price">Price: {item.stock.price}</div>
-        <div className="singleTileItem">Cat Id: {item.category_id}</div>
-        <div className="singleTileItem">{formatDate(item.add_date)}</div>
+        <div className="price">Price: {item.stock.price}</div>
+        <div>Cat Id: {item.category_id}</div>
+        <div>{formatDate(item.add_date)}</div>
       </div>
     </a>
   ));

@@ -4,10 +4,6 @@ body {
   font-family: sans-serif;
 }
 
-.hidden {
-  display: none;
-}
-
 .contentWrapper {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
