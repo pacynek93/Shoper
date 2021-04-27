@@ -7,16 +7,6 @@ body {
   display: none;
 }
 
-Button {
-  height: 50px;
-  width: 200px;
-  cursor: pointer;
-  &:hover {
-    background: #60a3bc;
-    color: #ffffff;
-  }
-}
-
 .contentWrapper {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
